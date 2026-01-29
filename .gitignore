@@ -1,0 +1,15 @@
+db/
+incremental_db/
+simulation/
+output_files/
+*.sof
+*.pof
+*.rpt
+*.chg
+*.bak
+*.cmp
+*.qws
+*.summary
+*.done
+*.pin
+*.dpf
