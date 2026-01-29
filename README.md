@@ -22,11 +22,11 @@
 
 ## 状态图
 
-![状态图](img/state_diag.png)
+<img src="img/state_diag.png" alt="状态图" width="450">
 
 ## CPU 整体架构
 
-![CPU 架构](img/cpu_arch.png)
+<img src="img/cpu_arch.png" alt="CPU 架构" width="400">
 
 ## 微程序控制单元
 
@@ -36,7 +36,7 @@ MPC输出的两个微操作代码接入微操作译码器，分别对两个域�
 
 SM控制微操作的执行周期，接入两个微操作译码器。
 
-![MPC 架构](img/mpc_top.png)
+<img src="img/mpc_top.png" alt="MPC 架构" width="300">
 
 ### 全部微操作
 
@@ -113,7 +113,7 @@ SM控制微操作的执行周期，接入两个微操作译码器。
 
 内部架构：
 
-![MPC 内部架构](img/mpc_inner.png)
+<img src="img/mpc_inner.png" alt="MPC 内部架构" width="400">
 
 ### 全部微代码
 
