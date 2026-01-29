@@ -1,0 +1,117 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+# Date created = 11:45:12  January 29, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		cpu_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY FLEX10K
+set_global_assignment -name DEVICE "EPF10K20TC144-4"
+set_global_assignment -name TOP_LEVEL_ENTITY cpu
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:45:12  JANUARY 29, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP1"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE sim/test.vwf
+set_global_assignment -name MISC_FILE "E:/0STUDY/2A/EE/mc-mpc-cpu/cpu.dpf"
+set_global_assignment -name SOURCE_FILE cpu.qsf
+set_global_assignment -name MIF_FILE sim/test.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim/test.vwf
+set_global_assignment -name MIF_FILE microcode_rom.mif
+set_global_assignment -name VERILOG_FILE ../rtl/ad_signal.v
+set_global_assignment -name VERILOG_FILE ../rtl/add1.v
+set_global_assignment -name VERILOG_FILE ../rtl/au.v
+set_global_assignment -name VERILOG_FILE ../rtl/bcd_to_7seg.v
+set_global_assignment -name VERILOG_FILE ../rtl/bin2bcd.v
+set_global_assignment -name VERILOG_FILE ../rtl/con_unit.v
+set_global_assignment -name VERILOG_FILE ../rtl/hex_to_7seg.v
+set_global_assignment -name VERILOG_FILE ../rtl/ins_decode1.v
+set_global_assignment -name VERILOG_FILE ../rtl/ins_decode2.v
+set_global_assignment -name VERILOG_FILE ../rtl/lpm_rom0.v
+set_global_assignment -name VERILOG_FILE ../rtl/map.v
+set_global_assignment -name VERILOG_FILE ../rtl/mir.v
+set_global_assignment -name VERILOG_FILE ../rtl/mux1_2_1.v
+set_global_assignment -name VERILOG_FILE ../rtl/mux2_1.v
+set_global_assignment -name VERILOG_FILE ../rtl/mux3_1.v
+set_global_assignment -name VERILOG_FILE ../rtl/mux5_3_1.v
+set_global_assignment -name VERILOG_FILE ../rtl/pc.v
+set_global_assignment -name VERILOG_FILE ../rtl/psw.v
+set_global_assignment -name VERILOG_FILE ../rtl/reg_group.v
+set_global_assignment -name VERILOG_FILE ../rtl/reg5.v
+set_global_assignment -name VERILOG_FILE ../rtl/reg8.v
+set_global_assignment -name VERILOG_FILE ../rtl/seg8_scan.v
+set_global_assignment -name VERILOG_FILE ../rtl/sign_to_7seg.v
+set_global_assignment -name VERILOG_FILE ../rtl/sm.v
+set_global_assignment -name BDF_FILE cpu.bdf
+set_global_assignment -name BDF_FILE mpc.bdf
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_136 -to a_seg
+set_location_assignment PIN_137 -to b_seg
+set_location_assignment PIN_138 -to c_seg
+set_location_assignment PIN_140 -to d_seg
+set_location_assignment PIN_141 -to e_seg
+set_location_assignment PIN_142 -to f_seg
+set_location_assignment PIN_143 -to g_seg
+set_location_assignment PIN_83 -to input[7]
+set_location_assignment PIN_82 -to input[6]
+set_location_assignment PIN_81 -to input[5]
+set_location_assignment PIN_80 -to input[4]
+set_location_assignment PIN_79 -to input[3]
+set_location_assignment PIN_78 -to input[2]
+set_location_assignment PIN_73 -to input[1]
+set_location_assignment PIN_72 -to input[0]
+set_location_assignment PIN_118 -to output[7]
+set_location_assignment PIN_117 -to output[6]
+set_location_assignment PIN_116 -to output[5]
+set_location_assignment PIN_114 -to output[4]
+set_location_assignment PIN_113 -to output[3]
+set_location_assignment PIN_112 -to output[2]
+set_location_assignment PIN_111 -to output[1]
+set_location_assignment PIN_110 -to output[0]
+set_location_assignment PIN_119 -to sel0
+set_location_assignment PIN_120 -to sel1
+set_location_assignment PIN_121 -to sel2
+set_location_assignment PIN_130 -to sel3
+set_location_assignment PIN_131 -to sel4
+set_location_assignment PIN_132 -to sel5
+set_location_assignment PIN_133 -to sel6
+set_location_assignment PIN_135 -to sel7
